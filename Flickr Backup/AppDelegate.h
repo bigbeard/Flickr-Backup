@@ -12,4 +12,12 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+- (IBAction)ClickButton:(NSButtonCell *)sender;
+
+- (NSDictionary *)executeFlickrFetch:(NSString *)query;
+
+- (NSString*)findPersonIdByUsername:(NSString *)username;
+
+@property (weak) IBOutlet NSTextField *personIdLabel;
+
 @end
